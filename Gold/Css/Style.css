@@ -1,29 +1,31 @@
 /* 
 Daniel Reyes
-VFW-1210
-Project 4
 */
 
 html{
 	background-color: #bcaf95;
 }
 
-h1{
+h2{
 	margin: 10px 20px;
-	border: solid #000000;
+	
 	padding: 10px;
 	background-color: #E1DFD3;
-	width: 30%;
+	width: 80%;
 	font-style: oblique;
 	font-family: sans-serif;
 	color: maroon;
 		
 }
-h2{
-	margin: 10px 20px;
-	font-style: oblique;
-	font-family: sans-serif;
-	color: #4D4B39;
+h3{
+
+	color: maroon;
+}
+h4{
+	position: absolute;
+	top:280px;
+	left:100px;
+	color: #ffb744
 }
 
 nav{
@@ -58,6 +60,10 @@ fieldset{
 	margin: 10px 20px;
 	border: solid #000;
 	background-color: #E1DFD3;
+}
+
+article{
+	color: #135400;
 }
 
 
