@@ -15,7 +15,7 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="/style.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 	
 	
@@ -36,12 +36,10 @@
 				<div class="ui-block-b"><a href="addItem.html" data-ajax="false"><button type="button" data-inline="true">Start Survey</button></a></div>
 			</div>
 			
-			<div>
-				<input type="search" data-filter"true" name="search" id="search" data-mini="true" placeholder="search"  />
-			</div>
 		
 			<div data-role="content">
-				<ul data-role="listview" data-inset="true" data-theme="a">
+				<input type="search" data-filter="true" name="search" id="search" data-mini="true" placeholder="search"  />
+				<ul data-role="listview" data-ajax="true" data-inset="true" data-theme="a">
 					<li><a href="#error">Browse Restaurants</a></li>
 					<li><a href="#error">Browse Grocery Stores</a></li>
 					<li><a href="#error">Browse Fast Food</a></li>
@@ -174,8 +172,10 @@
 				<h2 align="center">News</h2>
 			</div>
 			
+			<input type="search" data-filter="true" name="search" id="search" data-mini="true" placeholder="search"  />
+			
 			<div data-role="content">
-				<ul data-role="listview" data-theme="e">
+				<ul data-role="listview" data-ajax="true" data-theme="e">
 					<li data-role="list-divider">Today</li>
 					<li><a href="#error">
 						<h3>Wall-Mart</h3>
@@ -201,7 +201,7 @@
 					<li><a href="#error">
 						<h3>Bestbuy</h3>
 						<p>20% off all PS3 Games</p>
-						<span class="ui-li-aside">7:13AM</span>
+						<span class="ui-li-aside">7:13PM</span>
 					</a></li>
 
 				</ul>

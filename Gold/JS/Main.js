@@ -38,11 +38,12 @@ window.addEventListener("DOMContentLoaded", function(){
 			}						
 		}
 	}
-	function getCheckboxValue(){
-		if(ge('18-24').checked){
-			ageValue = $('18-24').value;
-		}else{
-			ageValue = "No";
+	function getRadioValue(){
+		var radios = document.forms[0].age;
+		for(var i=0; i<radios.length; i++){
+			if(radios[i].checked){
+				ageValue = radios[i].value;
+			}						
 		}
 	}
 	
@@ -77,7 +78,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			id = key;
 		}
 		getSelectedRadio();
-		getCheckboxValue();		
+		getRadioValue();		
 		var item			= {};
 			item.fname		= ["First Name:", ge('fname').value];
 			item.lname		= ["Last Name:", ge('lname').value];	
