@@ -231,12 +231,12 @@
 							
 					<div data-role="fieldcontain">
 						<label for="firstName">First Name:</label>
-						<input type="text" name="firstName" id="firstName" value="" data-mini="true" class="required" />
+						<input type="text" name="firstName" id="firstName" value="" placeholder="First Name" data-mini="true" class="required" />
 					</div>
 					
 					<div data-role="fieldcontain">
 						<label for="lastName">Last Name:</label>
-						<input type="text" name="lastName" id="lastName" value="" data-mini="true" class="required" />
+						<input type="text" name="lastName" id="lastName" value="" placeholder="Last Name" data-mini="true" class="required" />
 					</div>
 					
 					<div data-role="fieldcontain">
@@ -251,9 +251,21 @@
 					
 					
 					<div data-role="fieldcontain">
-						<label for="Address">Address:</label>
-						<textarea name="address" id="Address" value="" data-mini="true"></textarea>
+						<label for="address">Address:</label>
+						<textarea name="address" id="address" value="" data-mini="true"></textarea>
 					</div>
+					
+					<fieldset data-role="controlgroup" data-mini="true" class="required">
+						<legend>Gender:</legend>						
+							<input type="radio" name="gender" id="radio-choice-1" value="choice-1" checked="checked" />
+							<label for="radio-choice-1">Male</label>
+						
+							<input type="radio" name="gender" id="radio-choice-2" value="choice-2" />
+							<label for="radio-choice-2">Female</label>
+						
+							<input type="radio" name="gender" id="radio-choice-3" value="choice-3" />
+							<label for="radio-choice-3">Undecided</label>					
+					</fieldset>
 					
 					<a href="#survey" data-role="button" data-inline="true">Next</a>
 					<input type="reset" value="reset" data-inline="true" />
