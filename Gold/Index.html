@@ -284,8 +284,9 @@
 				<form action="" method="post" id="fillSurvey">
 			
 				<div data-role="fieldcontain">
-					<label for="survey" class="select">Survey</label>
-					<select name="establishments" id="establishments" class="required" data-native-menu="false">
+					<fieldset data-role="controlgroup" name="establishments" data-type="horizontal" class="required">
+					<legend>Establishments</legend>
+					<select name="establishments" id="establishments" class="required"  data-mini="true" data-native-menu="false">
 						<option data-placeholder="true">Please Select One</option>
 							<optgroup label="Restaurants">
 								<option value="hooters">Hooters</option>
@@ -306,8 +307,59 @@
 							<optgroup label="Clothing Stores">
 								<option value="macys">Macys</option>
 								<option value="jcPennys">Jc Pennys</option>
-							</optgroup>
+							</optgroup>					
 					</select>
+					</fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+					
+					<fieldset data-role="controlgroup" name="date" data-type="horizontal" data-mini="true" class="required">
+						<legend>Date:</legend>
+						<select name="date" id="month">
+							<option>Month</option>
+							<option value="Jan">January</option>
+							<option value="Feb">February</option>
+							<option value="Mar">March</option>
+							<option value="Apr">April</option>
+							<option value="May">May</option>
+							<option value="Jun">June</option>
+							<option value="Jul">July</option>
+							<option value="Aug">August</option>
+							<option value="Sep">September</option>
+							<option value="Oct">October</option>
+							<option value="Nov">November</option>
+							<option value="Dec">December</option>
+						</select>
+						
+						<select name="date" id="day">
+							<option>Day</option>
+							<option value="Mon">Monday</option>
+							<option value="Tue">Tuesday</option>
+							<option value="Wed">Wednesday</option>
+							<option value="Thu">Thursday</option>
+							<option value="Fri">Friday</option>
+							<option value="Sat">Saturday</option>
+							<option value="Sun">Sunday</option>
+						</select>
+						
+						<select name="date" id="time">
+							<option>Time</option>
+							<option value="11am">11:00 am</option>
+							<option value="12pm">12:00 pm</option>
+							<option value="1pm">1:00 pm</option>
+							<option value="2pm">2:00 pm</option>
+							<option value="3pm">3:00 pm</option>
+							<option value="4pm">4:00 pm</option>
+							<option value="5pm">5:00 pm</option>
+							<option value="6pm">6:00 pm</option>
+							<option value="7pm">7:00 pm</option>
+							<option value="8pm">8:00 pm</option>
+							<option value="9pm">9:00 pm</option>
+							<option value="10pm">10:00 pm</option>
+							<option value="11pm">11:00 pm</option>
+						</select>
+					</fieldset>
 				</div>
 				
 				</form>
