@@ -249,7 +249,7 @@
 						<input type="tel" name="phone" id="phone" value="" placeholder="123 456-7890" data-mini="true" class="required number" />
 					</div>
 					
-					
+					<!--Gender Radio Buttons-->										
 					<div data-role="fieldcontain">
 						<label for="address">Address:</label>
 						<textarea name="address" id="address" value="" data-mini="true"></textarea>
@@ -267,6 +267,7 @@
 							<label for="radio-choice-3">Undecided</label>					
 					</fieldset>
 					
+					<!--Age Radio Buttons-->
 					<fieldset data-role="controlgroup" data-mini="true" class="required">
 						<legend>Age:</legend>						
 							<input type="radio" name="age" id="radioChoice-1" value="choice-1" checked="checked" />
@@ -279,6 +280,18 @@
 							<label for="radioChoice-3">51+</label>					
 					</fieldset>
 					
+					<!--Race Checkboxes-->
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend>Race:</legend>
+								<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+								<label for="checkbox-1">Hispanic</label>
+								<input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+								<label for="checkbox-2">White/Caucasian</label>
+								<input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom" />
+								<label for="checkbox-3">African American</label>
+						</fieldset>
+					</div>
 					<a href="#survey" data-role="button" data-inline="true">Next</a>
 					<input type="reset" value="reset" data-inline="true" />
 							
@@ -306,7 +319,8 @@
 			<div data-role="content">
 			
 				<form action="#" method="post" id="fillSurvey">
-			
+				
+				<!--Establishments Select Menu-->
 				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup" name="establishments" data-type="horizontal" class="required">
 					<legend>Establishments</legend>
@@ -336,6 +350,7 @@
 					</fieldset>
 				</div>
 				
+				<!--Date Select Menu-->
 				<div data-role="fieldcontain">
 					
 					<fieldset data-role="controlgroup" name="date" data-type="horizontal" data-mini="true" class="required">
@@ -384,6 +399,20 @@
 							<option value="11pm">11:00 pm</option>
 						</select>
 					</fieldset>
+				</div>
+				<!--Slider for Service-->
+				<div data-role="fieldcontain">
+					<label for="slider-1">Rate your experience? 1-Poor to 5-Excellent:</label>
+					<input type="range" name="slider-1" id="slider-1" value="5" min="1" max="5" data-highlight="true" />
+				</div>
+				
+				<!--Call Back Flip Toggle Switch-->
+				<div data-role="fieldcontain">
+					<label for="flip-1">Request a Call Back?:</label>
+						<select name="flip-1" id="flip-1" data-role="slider">
+							<option value="yes">YES</option>
+							<option value="no">NO</option>
+						</select>
 				</div>
 				
 				</form>
