@@ -38,8 +38,7 @@
 			
 		
 			<div data-role="content">
-				<input type="search" data-filter="true" name="search" id="search" data-mini="true" placeholder="search"  />
-				<ul data-role="listview" data-ajax="true" data-inset="true" data-theme="a">
+				<ul data-role="listview" data-ajax="true" data-inset="true" data-filter="true" data-theme="a">
 					<li><a href="#error">Browse Restaurants</a></li>
 					<li><a href="#error">Browse Grocery Stores</a></li>
 					<li><a href="#error">Browse Fast Food</a></li>
@@ -54,11 +53,13 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
 		</div>
 		
+		<!--This guides the browse categories to an error page-->
 		<div data-role="dialog" id="error">
 			<a href="#home" data-rel="back" data-role="button">
 				<h1>404 Error Page</h1>
@@ -75,12 +76,12 @@
 			</div>
 			
 			<div data-role="listview">
-				<h2 align="center">About</ul>
+				<h2 align="center">About</h2>
 			</div>
 		
-			<div data-role="controlgroup" data-inset"true">
+			<div data-role="controlgroup" data-inset="true">
 				<a href="#info" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">App Info</a>
-				<a href="#bronze" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">Bronze App</a>
+				<a href="#bronze" data-ajax="true" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">Bronze App</a>
 				<a href="#github" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">Git Hub Pages</a>
 			</div>
 		
@@ -90,6 +91,7 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star" class="ui-btn-active">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
@@ -112,12 +114,14 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star" class="ui-btn-active">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
 			
 		</div>
 		
+		<!--This page is supposed to link to the Bronze app-->
 		<div data-role="page" id="bronze" data-add-back-btn="true">
 		
 			<div data-role="header" data-position="fixed">
@@ -134,12 +138,14 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star" class="ui-btn-active">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
 			
 		</div>
 		
+		<!--This link to the Github repository-->		
 		<div data-role="page" id="github" data-add-back-btn="true">
 		
 			<div data-role="header" data-position="fixed">
@@ -156,12 +162,59 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star" class="ui-btn-active">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
 			
 		</div>
 		
+		<!--this is the Categories for Thumbnail and text-->
+		<div data-role="page" id="categories" data-add-back-btn="true">
+		
+			<div data-role="header" data-position="fixed">
+				<h1>GPeS</h1>
+			</div>
+			
+			<ul data-role="listview">
+				<li><a href="#error">
+				<img src="images/fastfood.png">
+				<h2>Fast Food</h2>
+				<p>Fast Food Inquiries</p>
+				</a>
+				</li>
+				<li><a href="#error">
+				<img src="images/restaurant.png">
+				<h2>Restaurants</h2>
+				<p>Restaurants Inquiries</p>
+				</a>
+				</li>
+				<li><a href="#error">
+				<img src="images/clothing.png">
+				<h2>Clothing Stores</h2>
+				<p>Clothing Stores Inquiries</p>
+				</a>
+				</li>
+				<li><a href="#error">
+				<img src="images/department.png">
+				<h2>Department Stores</h2>
+				<p>Department Stores Inquiries</p>
+				</a>
+				</li>
+			</ul>
+			
+			<div data-role="footer" data-position="fixed" data-id="main">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#about" data-icon="star">About</a></li>
+						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid" class="ui-btn-active">Categories</a></li>
+					</ul>
+				</div>		
+			</div>
+		</div>
+		<!--This is the news feed section-->
 		<div data-role="page" id="news" data-add-back-btn="true">
 		
 			<div data-role="header" data-position="fixed">
@@ -213,6 +266,7 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star">About</a></li>
 						<li><a href="#news" data-icon="info" class="ui-btn-active">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
@@ -303,6 +357,7 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
@@ -415,6 +470,12 @@
 						</select>
 				</div>
 				
+				<!--Submit and Reset Buttons-->
+				<div data-role="fieldcontain" data-mini="true">
+					<input type="submit" value="Submit Order" data-inline="true" data-mini="true" />
+					<input type="reset" value="Reset Survey" data-inline="true" data-mini="true" data-theme="b" />
+				</div>
+				
 				</form>
 			
 			</div>
@@ -425,6 +486,7 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
