@@ -15,7 +15,7 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="/style.css" />
+	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 	
 	
@@ -281,7 +281,7 @@
 	
 			<div data-role="content">
 			
-				<form action="#" method="post" id="fillSurvey">
+				<form action="" method="post" id="fillSurvey">
 							
 					<div data-role="fieldcontain">
 						<label for="firstName">First Name:</label>
@@ -300,16 +300,17 @@
 					
 					<div data-role="fieldcontain">
 						<label for="phone">Phone:</label>
-						<input type="tel" name="phone" id="phone" value="" placeholder="123 456-7890" data-mini="true" class="required number" />
+						<input type="tel" name="phone" id="phone" value="" placeholder="123 456-7890" data-mini="true" />
 					</div>
 					
-					<!--Gender Radio Buttons-->										
+															
 					<div data-role="fieldcontain">
 						<label for="address">Address:</label>
 						<textarea name="address" id="address" value="" data-mini="true"></textarea>
 					</div>
 					
-					<fieldset data-role="controlgroup" data-mini="true" class="required">
+					<!--Gender Radio Buttons-->
+					<fieldset data-role="controlgroup" data-mini="true">
 						<legend>Gender:</legend>						
 							<input type="radio" name="gender" id="radio-choice-1" value="choice-1" checked="checked" />
 							<label for="radio-choice-1">Male</label>
@@ -322,7 +323,7 @@
 					</fieldset>
 					
 					<!--Age Radio Buttons-->
-					<fieldset data-role="controlgroup" data-mini="true" class="required">
+					<fieldset data-role="controlgroup" data-mini="true">
 						<legend>Age:</legend>						
 							<input type="radio" name="age" id="radioChoice-1" value="choice-1" checked="checked" />
 							<label for="radioChoice-1">18-30</label>
@@ -338,7 +339,7 @@
 					<div data-role="fieldcontain">
 						<fieldset data-role="controlgroup">
 							<legend>Race:</legend>
-								<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+								<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" class="required" />
 								<label for="checkbox-1">Hispanic</label>
 								<input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
 								<label for="checkbox-2">White/Caucasian</label>
@@ -346,6 +347,12 @@
 								<label for="checkbox-3">African American</label>
 						</fieldset>
 					</div>
+					
+				<div data-role="fieldcontain" data-mini="true">
+					<input type="submit" value="Submit Survey" data-inline="true" data-mini="true" data-theme="a" />
+					<input type="reset" value="Reset Survey" data-inline="true" data-mini="true" data-theme="b" />
+				</div>
+				
 					<a href="#survey" data-role="button" data-inline="true">Next</a>
 					<input type="reset" value="reset" data-inline="true" />
 							
@@ -472,7 +479,7 @@
 				
 				<!--Submit and Reset Buttons-->
 				<div data-role="fieldcontain" data-mini="true">
-					<input type="submit" value="Submit Order" data-inline="true" data-mini="true" />
+					<input type="submit" value="Submit Order" data-inline="true" data-mini="true" data-theme="a" />
 					<input type="reset" value="Reset Survey" data-inline="true" data-mini="true" data-theme="b" />
 				</div>
 				
@@ -495,6 +502,7 @@
 		<!-- JavaScript under here -->
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
