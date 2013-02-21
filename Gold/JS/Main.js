@@ -9,12 +9,16 @@ var parseSurveyForm = function(data){
 $('#home').on('pageinit',function(){
 //code needed form home page goes here
 
-	var myForm = $('#fillSurvey');
+	var myForm = $('#fillSurvey'),
+		serrorLink = $('#serrorLink')
+	;
 	
 	myForm.validate({
-		invalidHandler: function(form, validator){},
+		invalidHandler: function(form, validator){
+			serrorLink.click();
+		},
 		submitHandler: function(){
-			var data = myForm.serialize();
+			var data = myForm.serializeArray();
 			parseSurveyForm(data);
 		}
 	});

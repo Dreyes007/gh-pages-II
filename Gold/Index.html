@@ -33,7 +33,7 @@
 		
 			<div class="ui-grid-a">
 				<div class="ui-block-a"><img src="images/GPeS.png"></div>
-				<div class="ui-block-b"><a href="#personalInfo" data-ajax="false"><button type="button" data-inline="true">Start Survey</button></a></div>
+				<div class="ui-block-b"><a href="#personalInfo" id="startSurvey" data-theme="a" type="button" data-inline="true">Start Survey</a></div>
 			</div>
 			
 		
@@ -81,7 +81,7 @@
 		
 			<div data-role="controlgroup" data-inset="true">
 				<a href="#info" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">App Info</a>
-				<a href="#bronze" data-ajax="true" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">Bronze App</a>
+				<a href="file:///Volumes/Macintosh%20HD/Users/Kurlzs/Documents/Full%20Sail/MIU2/gh-pages-II/Bronze/index.html" data-role="button" 							data-theme="a" data-icon="arrow-r" data-iconpos="right">Bronze App</a>
 				<a href="#github" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">Git Hub Pages</a>
 			</div>
 		
@@ -129,7 +129,7 @@
 			</div>
 		
 			<div data-role="content">
-				<a href="Documents/Full Sail/MIU2/gh-pages-II/Bronze/index.html">Bronze App</a>
+				<a href="file:///Volumes/Macintosh%20HD/Users/Kurlzs/Documents/Full%20Sail/MIU2/gh-pages-II/Bronze/index.html" data-ajax="false">Bronze 					App</a>
 			</div>
 		
 			<div data-role="footer" data-position="fixed" data-id="main">
@@ -278,10 +278,10 @@
 			<div data-role="header" data-position="fixed">
 				<h1>Personal Info</h1>
 			</div>
-	
+					
 			<div data-role="content">
 			
-				<form action="" method="post" id="fillSurvey">
+				<form action="" id="fillSurvey">
 							
 					<div data-role="fieldcontain">
 						<label for="firstName">First Name:</label>
@@ -300,13 +300,13 @@
 					
 					<div data-role="fieldcontain">
 						<label for="phone">Phone:</label>
-						<input type="tel" name="phone" id="phone" value="" placeholder="123 456-7890" data-mini="true" />
+						<input type="tel" name="phone" id="phone" value="" placeholder="123 456-7890" data-mini="true" class="required tel" />
 					</div>
 					
 															
 					<div data-role="fieldcontain">
 						<label for="address">Address:</label>
-						<textarea name="address" id="address" value="" data-mini="true"></textarea>
+						<textarea name="address" id="address" value="" data-mini="true" placeholder="5009 MIU St, Melbourne, Fl 32903"></textarea>
 					</div>
 					
 					<!--Gender Radio Buttons-->
@@ -325,7 +325,7 @@
 					<!--Age Radio Buttons-->
 					<fieldset data-role="controlgroup" data-mini="true">
 						<legend>Age:</legend>						
-							<input type="radio" name="age" id="radioChoice-1" value="choice-1" checked="checked" />
+							<input type="radio" name="age" id="radioChoice-1" value="choice-1" checked="checked" class="required" />
 							<label for="radioChoice-1">18-30</label>
 						
 							<input type="radio" name="age" id="radioChoice-2" value="choice-2" />
@@ -339,7 +339,7 @@
 					<div data-role="fieldcontain">
 						<fieldset data-role="controlgroup">
 							<legend>Race:</legend>
-								<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" class="required" />
+								<input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
 								<label for="checkbox-1">Hispanic</label>
 								<input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
 								<label for="checkbox-2">White/Caucasian</label>
@@ -347,44 +347,11 @@
 								<label for="checkbox-3">African American</label>
 						</fieldset>
 					</div>
-					
-				<div data-role="fieldcontain" data-mini="true">
-					<input type="submit" value="Submit Survey" data-inline="true" data-mini="true" data-theme="a" />
-					<input type="reset" value="Reset Survey" data-inline="true" data-mini="true" data-theme="b" />
-				</div>
-				
-					<a href="#survey" data-role="button" data-inline="true">Next</a>
-					<input type="reset" value="reset" data-inline="true" />
-							
-				</form>
-				
-			<div data-role="footer" data-position="fixed" data-id="main">
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#about" data-icon="star">About</a></li>
-						<li><a href="#news" data-icon="info">News</a></li>
-						<li><a href="#categories" data-icon="grid">Categories</a></li>
-					</ul>
-				</div>		
-			</div>
-			
-			</div>
-		</div>
-		
-		<div data-role="page" id="survey" data-add-back-btn="true">
-			
-			<div data-role="header" data-position="fixed">
-				<h1>Survey</h1>			
-			</div>
-			
-			<div data-role="content">
-			
-				<form action="#" method="post" id="fillSurvey">
+											
 				
 				<!--Establishments Select Menu-->
 				<div data-role="fieldcontain">
-					<fieldset data-role="controlgroup" name="establishments" data-type="horizontal" class="required">
+					<fieldset data-role="controlgroup" name="establishments" data-type="horizontal">
 					<legend>Establishments</legend>
 					<select name="establishments" id="establishments" class="required"  data-mini="true" data-native-menu="false">
 						<option data-placeholder="true">Please Select One</option>
@@ -478,15 +445,19 @@
 				</div>
 				
 				<!--Submit and Reset Buttons-->
-				<div data-role="fieldcontain" data-mini="true">
+				<!--<div data-role="fieldcontain" data-mini="true">-->
 					<input type="submit" value="Submit Order" data-inline="true" data-mini="true" data-theme="a" />
-					<input type="reset" value="Reset Survey" data-inline="true" data-mini="true" data-theme="b" />
-				</div>
+					<input type="reset" value="Reset Survey"  data-inline="true" data-mini="true" data-theme="b" />
+				<!--</div>-->
+				
+					<a href="#surveyError" id="serrorLink" data-rel="dialog" data-transition="pop">Open Errors</a>
 				
 				</form>
 			
 			</div>
-									
+			
+		
+							
 			<div data-role="footer" data-position="fixed" data-id="main">
 				<div data-role="navbar">
 					<ul>
@@ -497,6 +468,20 @@
 					</ul>
 				</div>		
 			</div>
+		</div>
+		
+		<div data-role="dialog" id="surveyError">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Missing Fields</h1>			
+			</div>
+			
+			<div data-role="content">
+				<ul>
+					<li>Test</li>
+				</ul>
+			</div>
+			
 		</div>
 
 		<!-- JavaScript under here -->
