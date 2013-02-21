@@ -16,7 +16,7 @@
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-	<link rel="stylesheet" href="/style.css" />
+	<link rel="stylesheet" href="css/style.css" />
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -34,57 +34,56 @@
 				<div class="ui-block-a"><img src="images/GPeS.png"></div>
 				<div class="ui-block-b"><a href="addItem.html" data-ajax="false"><button type="button" data-inline="true">Start Survey</button></a></div>
 			</div>
-			
-			<div>
-				<input type="search" name="search" data-filter"true" id="search" data-mini="true" placeholder="search"  />
-			</div>
-		
+					
 			<div data-role="content">
+			
+				<div data-role="listview" data-inset="true" data-filter="true" data-mini="true">
 				
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<h2>Browse Restaurants</h2>
-					
-					
-						<div><a href="#error">Chili's</a></div>
-						<div><a href="#error">Hooters</a></div>
-						<div><a href="#error">Appelbee's</a></div>
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
+						<h2>Browse Restaurants</h2>
+									
+							<div><a href="#error">Chili's</a></div>
+							<div><a href="#error">Hooters</a></div>
+							<div><a href="#error">Appelbee's</a></div>
 												
-				</div>
+					</div>
 				
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<h2>Browse Grocery Stores</h2>
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
+						<h2>Browse Grocery Stores</h2>
 					
-						<div><a href="#error">Publix</a></div>
-						<div><a href="#error">Winn-Dixie</a></div>
-						<div><a href="#error">Albertsons</a></div>
+							<div><a href="#error">Publix</a></div>
+							<div><a href="#error">Winn-Dixie</a></div>
+							<div><a href="#error">Albertsons</a></div>
 												
-				</div>
+					</div>
 				
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<h2>Browse Fast Food</h2>
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
+						<h2>Browse Fast Food</h2>
 					
-						<div><a href="#error">McDonalds</a></div>
-						<div><a href="#error">Burger King</a></div>
-						<div><a href="#error">Wendy's</a></div>
+							<div><a href="#error">McDonalds</a></div>
+							<div><a href="#error">Burger King</a></div>
+							<div><a href="#error">Wendy's</a></div>
 												
-				</div>
+					</div>
 				
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<h2>Browse Department Stores</h2>
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
+						<h2>Browse Department Stores</h2>
 					
-						<div><a href="#error">Wall-Mart</a></div>
-						<div><a href="#error">Target</a></div>
-						<div><a href="#error">Khols</a></div>
+							<div><a href="#error">Wall-Mart</a></div>
+							<div><a href="#error">Target</a></div>
+							<div><a href="#error">Khols</a></div>
 												
-				</div>
+					</div>
 				
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<h2>Browse Clothing Stores</h2>
+					<div data-role="collapsible" data-collapsed="true" data-theme="a">
+						<h2>Browse Clothing Stores</h2>
 					
-						<div><a href="#error">Jc Pennys</a></div>
-						<div><a href="#error">Macys</a></div>
-						<div><a href="#error">Dillards</a></div>
+							<div><a href="#error">Jc Pennys</a></div>
+							<div><a href="#error">Macys</a></div>
+							<div><a href="#error">Dillards</a></div>
 												
+					</div>
+				
 				</div>
 
 			</div>
@@ -124,6 +123,7 @@
 				<a href="#info" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">App Info</a>
 				<a href="file:///Volumes/Macintosh%20HD/Users/Kurlzs/Documents/Full%20Sail/MIU2/gh-pages-II/Gold/index.html" data-role="button" 							data-theme="a" data-icon="arrow-r" data-iconpos="right">Gold App</a>
 				<a href="#github" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">Git Hub Pages</a>
+				<a href="#credits" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">Credits</a>
 			</div>
 		
 			<div data-role="footer" data-position="fixed" data-id="main">
@@ -132,6 +132,7 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star" class="ui-btn-active">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
@@ -154,21 +155,25 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star" class="ui-btn-active">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
 			
 		</div>
 		
-		<div data-role="page" id="bronze" data-add-back-btn="true">
+		<!--Credits for the Icons-->
+		<div data-role="page" id="credits" data-add-back-btn="true">
 		
 			<div data-role="header" data-position="fixed">
 				<h1>GPeS</h1>
 			</div>
 		
 			<div data-role="content">
-				<a href="Documents/Full Sail/MIU2/gh-pages-II/Bronze/index.html">Bronze App</a>
+				<p>Icons Obtained from Icon Finder</p>
+				<a href="http://www.iconfinder.com/" data-ajax="false">Iconfinder.com</a>
 			</div>
+		
 		
 			<div data-role="footer" data-position="fixed" data-id="main">
 				<div data-role="navbar">
@@ -176,6 +181,7 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star" class="ui-btn-active">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
@@ -198,6 +204,7 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star" class="ui-btn-active">About</a></li>
 						<li><a href="#news" data-icon="info">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
@@ -253,6 +260,7 @@
 						<li><a href="#home" data-icon="home">Home</a></li>
 						<li><a href="#about" data-icon="star">About</a></li>
 						<li><a href="#news" data-icon="info" class="ui-btn-active">News</a></li>
+						<li><a href="#categories" data-icon="grid">Categories</a></li>
 					</ul>
 				</div>		
 			</div>
@@ -265,8 +273,39 @@
 				<h1>GPeS</h1>
 			</div>
 			
-			<div class="ui-grid-c">
-				<div class="ui-block-a">Fast Food</div>
+			<div class="ui-grid-c" id="grid">
+				<div class="ui-block-a">
+					<div class="ui-bar ui-bar-c" style="height:200px">
+						<a href="#error" data-ajax="false">
+							<img src="images/fastfood.png" />
+							<p>Fast Food</p>
+						</a>
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div class="ui-bar ui-bar-c" style="height:210px">
+						<a href="#error" data-ajax="false">
+							<img src="images/restaurant.png" />
+							<p>Restaurants</p>
+						</a>
+					</div>
+				</div>
+				<div class="ui-block-c">
+					<div class="ui-bar ui-bar-c" style="height:200px">
+						<a href="#error" data-ajax="false">
+							<img src="images/clothing.png" />
+							<p>Clothing</p>
+						</a>
+					</div>
+				</div>
+				<div class="ui-block-d">
+					<div class="ui-bar ui-bar-c" style="height:200px">
+						<a href="#error" data-ajax="false">
+							<img src="images/department.png" />
+							<p>Department Stores</p>
+						</a>
+					</div>
+				</div>
 			</div>
 			
 			<div data-role="footer" data-position="fixed" data-id="main">

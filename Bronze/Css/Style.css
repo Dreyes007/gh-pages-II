@@ -4,7 +4,7 @@ MIU-1302
 Bronze app
 */
 
-html{
+/*html{
 	background-color: #bcaf95;
 }
 
@@ -71,3 +71,7 @@ a:link{color: blue;}
 a:visited{color: red;}
 a:hover{color: gray;}
 a:active{color: black;}
+*/
+
+#grid{display: inline-block;margin: 10px;}
+
