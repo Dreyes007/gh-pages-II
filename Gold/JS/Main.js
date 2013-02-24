@@ -30,5 +30,15 @@ $('#home').on('pageinit',function(){
 			parseSurveyForm(data);
 		}
 	});
+	
+	/*function store(key){
+		
+		localStorage.setItem("firstName", ge('fname').value);
+		localStorage.setItem("lastName", ge('lname').value);
+		localStorage.setItem("email", ge('email').value);
+		localStorage.setItem("phone", ge('phone').value);
+		localStorage.setItem("address", ge('address').value);
+	}*/
+	
 
 });

@@ -10,5 +10,10 @@ label.error{display: block; margin: 10px 0; color: #cc0000;}
 
 #startSurvey{margin: 30px auto;}
 
+.hint{
+	position: relative; font-size: smaller;
+	color: #ff0000;
+}
+
 
 
