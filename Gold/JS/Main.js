@@ -19,7 +19,7 @@ $('#home').on('pageinit',function(){
 			var html = '';
 			for(var key in validator.submitted){
 				var label = $('label[for^="'+ key +'"]').not('[generated]');
-				varlegend = label.closest('fieldset').find('.ui-controlgroup-label');
+				var legend = label.closest('fieldset').find('.ui-controlgroup-label');
 				var fieldname = legend.length ? legend.text() : label.text();
 				html += '<li>'+ fieldname  +'</li>';
 			};
