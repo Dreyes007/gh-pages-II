@@ -8,7 +8,7 @@
 	
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320"/>
+	<meta name="MobileOptimized" content="32/Volumes/Macintosh%20HD/Users/Kurlzs/Documents/Full%20Sail/MIU2/gh-pages-II/Gold/index.html0"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- Mobile IE needs ClearType for smoothing fonts -->
@@ -16,7 +16,10 @@
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/survey.css" />
+	<link rel="stylesheet" href="css/structure.css" />
+	
+	
 	
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -25,20 +28,25 @@
 </head>
 	<body>
 
-		<div data-role="page" id="home">
+		<div data-role="page" id="home" data-theme="b">
 		
-			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 		
-			<div class="ui-grid-a">
-				<div class="ui-block-a"><img src="images/GPeS.png"></div>
-				<div class="ui-block-b"><a href="#personalInfo" id="startSurvey" data-theme="a" type="button" data-inline="true">Start Survey</a></div>
+			<div data-role="content">
+				<div id="feature"><img src="images/GPESFeature.png"></div>							
+			
+			
+				<div id="start">
+					<a href="#personalInfo" id="startSurvey" type="button" data-inline="false" data-mini="true">Start Survey</a>
+				</div>
+			
 			</div>
 			
 		
 			<div data-role="content">
-				<ul data-role="listview" data-ajax="true" data-inset="true" data-filter="true" data-theme="a">
+				<ul data-role="listview" data-ajax="true" data-inset="true" data-filter="true">
 					<li><a href="#error">Browse Restaurants</a></li>
 					<li><a href="#error">Browse Grocery Stores</a></li>
 					<li><a href="#error">Browse Fast Food</a></li>
@@ -47,7 +55,7 @@
 				</ul>
 			</div>
 		
-			<div data-role="footer" data-position="fixed" data-id="main">
+			<div data-role="footer" data-position="fixed" data-id="main" data-theme="b">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
@@ -64,16 +72,16 @@
 			<a href="#home" data-rel="back" data-role="button">
 				<h1>404 Error Page</h1>
 				<p>This page cannot be found</p>
-				<div data-role="button" data-theme="b" data-inline="true">Ok</div>
+				<div data-role="button" data-inline="true">Ok</div>
 			</a>
 						
 		</div>
 		
 		<!--Information about the app-->
-		<div data-role="page" id="about" data-add-back-btn="true">
+		<div data-role="page" id="about" data-add-back-btn="true" data-theme="b">
 		
-			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 			
 			<div data-role="listview">
@@ -81,13 +89,13 @@
 			</div>
 		
 			<div data-role="controlgroup" data-inset="true">
-				<a href="#info" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">App Info</a>
-				<a href="file:///Volumes/Macintosh%20HD/Users/Kurlzs/Documents/Full%20Sail/MIU2/gh-pages-II/Bronze/index.html" data-role="button" 							data-theme="a" data-icon="arrow-r" data-iconpos="right">Bronze App</a>
-				<a href="#github" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">Git Hub Pages</a>
-				<a href="#credits" data-role="button" data-theme="a" data-icon="arrow-r" data-iconpos="right">Credits</a>
+				<a href="#info" data-role="button" data-icon="arrow-r" data-iconpos="right">App Info</a>
+				<a href="file:///Volumes/Macintosh%20HD/Users/Kurlzs/Documents/Full%20Sail/MIU2/gh-pages-II/Bronze/index.html" data-role="button" 							 data-icon="arrow-r" data-iconpos="right">Bronze App</a>
+				<a href="#github" data-role="button" data-icon="arrow-r" data-iconpos="right">Git Hub Pages</a>
+				<a href="#credits" data-role="button" data-icon="arrow-r" data-iconpos="right">Credits</a>
 			</div>
 		
-			<div data-role="footer" data-position="fixed" data-id="main">
+			<div data-role="footer" data-position="fixed" data-id="main" data-theme="b">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
@@ -101,17 +109,17 @@
 		</div>
 		
 		<!--Explains the app-->
-		<div data-role="page"  id="info" data-add-back-btn="true">
+		<div data-role="page"  id="info" data-add-back-btn="true" data-theme="b">
 		
-			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 		
 			<div data-role="content">
 				<p>This App lets the guest choose from a list of dinning, groceries stores, or retail establishments, and lets them fill out a survey about 				   their experience.</p>
 			</div>
 		
-			<div data-role="footer" data-position="fixed" data-id="main">
+			<div data-role="footer" data-position="fixed" data-id="main" data-theme="b">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
@@ -125,10 +133,10 @@
 		</div>
 		
 		<!--Credits for the Icons-->
-		<div data-role="page" id="credits" data-add-back-btn="true">
+		<div data-role="page" id="credits" data-add-back-btn="true" data-theme="b">
 		
-			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 		
 			<div data-role="content">
@@ -136,7 +144,7 @@
 				<a href="http://www.iconfinder.com/" data-ajax="false">Iconfinder.com</a>
 			</div>
 		
-			<div data-role="footer" data-position="fixed" data-id="main">
+			<div data-role="footer" data-position="fixed" data-id="main" data-theme="b">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
@@ -150,17 +158,17 @@
 		</div>
 		
 		<!--This link to the Github repository-->		
-		<div data-role="page" id="github" data-add-back-btn="true">
+		<div data-role="page" id="github" data-add-back-btn="true" data-theme="b">
 		
-			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 		
 			<div data-role="content">
 				<a href="https://github.com/Dreyes007/gh-pages-II.git">Git Hub</a>
 			</div>
 		
-			<div data-role="footer" data-position="fixed" data-id="main">
+			<div data-role="footer" data-position="fixed" data-id="main" data-theme="b">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
@@ -174,10 +182,10 @@
 		</div>
 		
 		<!--this is the Categories for Thumbnail and text-->
-		<div data-role="page" id="categories" data-add-back-btn="true">
+		<div data-role="page" id="categories" data-add-back-btn="true" data-theme="b">
 		
-			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 			
 			<ul data-role="listview">
@@ -207,7 +215,7 @@
 				</li>
 			</ul>
 			
-			<div data-role="footer" data-position="fixed" data-id="main">
+			<div data-role="footer" data-position="fixed" data-id="main" data-theme="b">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
@@ -219,10 +227,10 @@
 			</div>
 		</div>
 		<!--This is the news feed section-->
-		<div data-role="page" id="news" data-add-back-btn="true">
+		<div data-role="page" id="news" data-add-back-btn="true" data-theme="b">
 		
-			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+			<div data-role="header" data-position="fixed" data-theme="b">
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 			
 			<div data-role="list-divider">
@@ -232,7 +240,7 @@
 			<input type="search" data-filter="true" name="search" id="search" data-mini="true" placeholder="search"  />
 			
 			<div data-role="content">
-				<ul data-role="listview" data-ajax="true" data-theme="e">
+				<ul data-role="listview" data-ajax="true">
 					<li data-role="list-divider">Today</li>
 					<li><a href="#error">
 						<h3>Wall-Mart</h3>
@@ -264,7 +272,7 @@
 				</ul>
 			</div>
 	
-			<div data-role="footer" data-position="fixed" data-id="main">
+			<div data-role="footer" data-position="fixed" data-id="main" data-theme="b">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
@@ -277,9 +285,9 @@
 			
 		</div>
 		
-		<div data-role="page" id="personalInfo" data-add-back-btn="true">
+		<div data-role="page" id="personalInfo" data-add-back-btn="true" data-theme="b">
 		
-			<div data-role="header" data-position="fixed">
+			<div data-role="header" data-position="fixed" data-theme="b">
 				<h1>Personal Info</h1>
 			</div>
 					
@@ -442,7 +450,7 @@
 				<!--Slider for Service-->
 				<div data-role="fieldcontain">
 					<label for="slider-1">Rate your experience? 1-Poor to 5-Excellent:</label>
-					<input type="range" name="slider-1" id="slider-1" value="5" min="1" max="5" data-highlight="true" />
+					<input type="range" name="slider-1" id="slider-1" value="5" min="1" max="5" data-highlight="true" data-popup-enable="true" />
 				</div>
 				
 				<!--Call Back Flip Toggle Switch-->
@@ -456,7 +464,7 @@
 				
 				<!--Submit and Reset Buttons-->
 				<!--<div data-role="fieldcontain" data-mini="true">-->
-					<input type="submit" value="Submit Order" id="submit" data-inline="true" data-mini="true" data-theme="a" />
+					<input type="submit" value="Submit Order" id="submit" data-inline="true" data-mini="true" />
 					<input type="reset" value="Reset Survey"  data-inline="true" data-mini="true" data-theme="b" />
 				<!--</div>-->
 				
@@ -468,7 +476,7 @@
 			
 		
 							
-			<div data-role="footer" data-position="fixed" data-id="main">
+			<div data-role="footer" data-position="fixed" data-id="main" data-theme="b">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
@@ -482,7 +490,7 @@
 		
 		<div data-role="dialog" id="surveyError">
 			
-			<div data-role="header" data-position="fixed">
+			<div data-role="header" data-position="fixed" data-theme="b">
 				<h1>Missing Fields</h1>			
 			</div>
 			
@@ -496,7 +504,7 @@
 
 		<!-- JavaScript under here -->
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
 		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="js/test.js"></script>
 	</body>

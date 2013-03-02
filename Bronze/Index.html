@@ -15,8 +15,9 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/survey.css" />
+	<link rel="stylesheet" href="css/structure.css" />
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -24,15 +25,20 @@
 </head>
 <body>
 
-		<div data-role="page" id="home">
+		<div data-role="page" id="home" data-theme="a">
 		
-			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 		
-			<div class="ui-grid-a">
-				<div class="ui-block-a"><img src="images/GPeS.png"></div>
-				<div class="ui-block-b"><a href="addItem.html" data-ajax="false"><button type="button" data-inline="true">Start Survey</button></a></div>
+			<div data-role="content">
+				<div id="feature"><img src="images/GPESFeature.png"></div>							
+			
+			
+				<div id="start">
+					<a href="addItem.html" id="startSurvey" type="button" data-inline="false" data-mini="true">Start Survey</a>
+				</div>
+			
 			</div>
 					
 			<div data-role="content">
@@ -112,7 +118,7 @@
 		<div data-role="page" id="about" data-add-back-btn="true">
 		
 			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 			
 			<div data-role="listview">
@@ -142,7 +148,7 @@
 		<div data-role="page"  id="info" data-add-back-btn="true">
 		
 			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 		
 			<div data-role="content">
@@ -166,7 +172,7 @@
 		<div data-role="page" id="credits" data-add-back-btn="true">
 		
 			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 		
 			<div data-role="content">
@@ -191,7 +197,7 @@
 		<div data-role="page" id="github" data-add-back-btn="true">
 		
 			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 		
 			<div data-role="content">
@@ -214,7 +220,7 @@
 		<div data-role="page" id="news" data-add-back-btn="true">
 		
 			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 			
 			<div data-role="list-divider">
@@ -270,7 +276,7 @@
 		<div data-role="page" id="categories" data-add-back-btn="true">
 			
 			<div data-role="header" data-position="fixed">
-				<h1>GPeS</h1>
+				<div id="little" align="center"><img src="images/GPESmin.png" /></div>
 			</div>
 			
 			<div class="ui-grid-a" id="grid" ui="responsive">
